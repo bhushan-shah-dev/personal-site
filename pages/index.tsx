@@ -145,8 +145,13 @@ const Home: NextPage = () => {
       </main>
       <footer className={styles.footer}>
         <small>
-          {"Website source code "}
-          <a href="https://github.com/bhushan-shah-dev/personal-site">here</a>
+          {"Check out the website "}
+          <a
+            href="https://github.com/bhushan-shah-dev/personal-site"
+            style={{ textDecoration: "underline" }}
+          >
+            source code
+          </a>
         </small>
         <small>
           {"Favicon made by "}
