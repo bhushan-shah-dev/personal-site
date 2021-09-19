@@ -1,0 +1,53 @@
+@import "./palette";
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+}
+
+.main {
+  display: grid;
+  place-items: center;
+  text-align: justify;
+  color: $gunmetal;
+  margin: 10vh 10vw;
+
+  .profile {
+    max-width: 600px;
+    padding: 1rem;
+    border: 0.5rem $gunmetal solid;
+
+    h1 {
+      text-align: center;
+      color: $dark-sienna;
+    }
+
+    .profile-pic {
+      shape-outside: url("../public/profile-pic-small.png");
+      shape-margin: 1.5rem;
+      float: left;
+      filter: drop-shadow(0.1rem -0.1rem 0.5rem $gunmetal);
+    }
+  }
+
+  .icon-links {
+    display: flex;
+
+    & > * {
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+.footer {
+  display: grid;
+  place-items: center;
+  background-color: $dark-sienna;
+  color: $straw;
+  padding: 1rem 0;
+
+  & > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}

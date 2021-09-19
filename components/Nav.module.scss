@@ -1,0 +1,33 @@
+@import "../styles/palette";
+
+.nav {
+  background-color: $dark-sienna;
+  color: $straw;
+  padding: 10px 20px;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    li {
+      list-style-type: none;
+
+      a {
+        font-size: larger;
+        font-weight: 400;
+
+        &.active {
+          font-weight: 700;
+          color: $xanthic;
+        }
+      }
+
+      &:not(:last-of-type) {
+        a {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
